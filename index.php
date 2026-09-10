@@ -3,7 +3,7 @@ $a = 1;
 $b = -5;
 $c = 6;
 
-$delta = $b**2 -4*$a*$c;
+$delta = $b**2 -(4*$a*$c);
     // Zmienna a1 b-5 c6 oblicz delte więkrza od zera dwa miejsca zerowe jeżeli zero jedno mniej to brak miejsc zerowych 
 echo $delta;
 
