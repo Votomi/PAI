@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <hr>
+    <label for="dlugosc">długość: </label>
+    <input type="number" id="dlugosc" >
+    <br>
+    <label for="ilosc">Ilosc: </label>
+    <input type="number" id="ilosc">
+    <br>
+    <button type="button" id="btn">Oblicz</button>
+    <p id="p">Odpowiedź</p>
+
+
+
+
+
+    <script>
+        let btn = document.getElementById("btn");
+        let p = document.getElementById("p");
+        btn.addEventListener("click",function(){
+            let cena = Number(document.getElementById("cena").value);
+            let ilosc = Number(document.getElementById("ilosc").value);
+            let odp = cena*ilosc;
+            console.log(cena);
+            console.log(ilosc);
+            p.textContent="Cena to: "+odp+" zł";
+        });
+    </script>
+</body>
+</html>
